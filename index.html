@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人网页</title>
+    <style>
+        .main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .nav {
+            margin-top: 20px;
+        }
+
+        .content {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        function showPage(pageId) {
+            // 隐藏所有内容区域
+            var pages = document.getElementsByClassName("content");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+
+            // 显示选中的内容区域
+            var selectedPage = document.getElementById(pageId);
+            selectedPage.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <h1>欢迎来到我的个人主页</h1>
+        <div class="nav">
+            <button onclick="showPage('page1')">HOME</button>
+            <button onclick="showPage('page2')">ABOUT ME</button>
+            <button onclick="showPage('page3')">FAVORATE WORDS</button>
+            <button onclick="showPage('page4')">MY JOTTINGS</button>
+            <button onclick="showPage('page5')">CONTACT WAY</button>
+        </div>
+        <div id="page1" class="content">
+            <h2>HOME</h2>
+            <h2>欢迎来到甘恩泽个人主页</h2>
+            <br>
+            <h2>你可以查看我的个人内容</h2>
+            <h2>ABOUT ME:在此界面我会向你介绍我自己</h2>
+            <h2>FAVORATE WORDS:在此界面我会记录我喜欢的文字</h2>       
+            <h2>MY JOTTINGS:在此界面我会写下我的一些随笔</h2>
+            <h2>CONTACT WAY:在此界面我会给出我的联系方式</h2>
+        </div>
+        <div id="page2" class="content">
+            <h2>ABOUT ME</h2>
+            <h2>个人简介</h2>
+            <br>
+            <h2>我的专业：计算机类</h2>
+            <h2>我的出生年月：2005.06.27</h2>
+            <h2>我最喜欢的歌手：周杰伦</h2>       
+            <h2>我最喜欢的歌：《我是如此相信》</h2>
+            <h2>我喜欢的运动：篮球，足球，乒乓球</h2>
+
+        </div>
+        <div id="page3" class="content">
+            <h2>请你慢一点忘记我吧</h2>
+            <br>
+            <h2>永恒的太阳会在五十亿年后熄灭，</h2>
+            <h2>地球早在二十五亿年前，</h2>
+            <h2>就与月亮开始了漫长的告别。</h2>
+            <h2>而久别重逢的我们，</h2>
+            <h2>曾在持续爆炸的碎片里狂奔，</h2>
+            <h2>跨越一百五十亿年碰撞，寻找，</h2>
+            <h2>心跳共振。</h2>
+            <h2>请你，</h2>
+            <h2>慢一点爱上别人。</h2>
+
+        </div>
+        <div id="page4" class="content">
+            <h2>MY JOTTINGS</h2>
+            <br>
+            <h2>“我活着就是在恪守成规的世界里放逐自由”</h2>
+            <h2>“我渴望野性的文字”</h2>
+            <h2>“我就是这么热烈奔放 无惧无畏”</h2>
+            <h2>“嗜桀骜不驯为瘾 攀放荡自由之顶”</h2>
+            <h2>“我的灵魂峭骨独立 我的思想巍然不拘”</h2>
+            <h2>“活在每一个阳光明媚的日子”</h2>
+            <h2>“奔走呼喊在每一个瑰丽震撼的日出”</h2>
+            <h2>“尖叫着穿越昏黄路灯下的梧桐树叶”</h2>
+            <h2>“在黑夜破晓前疯狂奔跑于晦暗中”</h2>
+            <h2>“这是我跋涉万里的滚烫理想”</h2>
+            <h2>“这是我一路驰骋从不磨灭的意志”</h2>
+            <h2>“我即是我，从不转移”</h2>
+        </div>
+        <div id="page5" class="content">
+            <h2>CONTACT WAY</h2>
+            <h2>QQ：2837001589</h2>
+            <h2>PHONE NUMBER:13409651206</h2>
+            <h2>VX:gez0627gez</h2>
+            
+        </div>
+    </div>
+</body>
+</html>
